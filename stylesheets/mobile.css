@@ -82,9 +82,6 @@ blockquote {
   color: #8b786f;
   padding-left: 1.35em; }
 
-tr {
-  display: table-row; }
-
 dd {
   padding-left: 1.35em; }
   dd p:first-child {
@@ -94,6 +91,9 @@ hr {
   border: none;
   outline: none;
   margin: 0 0 20px; }
+
+tr {
+  display: table-row; }
 
 th {
   display: table-cell;
@@ -110,17 +110,6 @@ td {
   td:last-child {
     border-right: none; }
 
-#menu td:last-child {
-  text-align: right; }
-#menu td:first-child {
-  text-align: right;
-  width: 5%; }
-
-#menu table {
-  margin-bottom: 30px; }
-  #menu table caption {
-    font-weight: bolder; }
-
 th:last-child {
   border-right: none; }
 
@@ -133,10 +122,6 @@ dl {
 dt {
   font-family: "Inder", sans-serif;
   font-weight: bold; }
-
-.price {
-  border: 2px solid red;
-  color: red; }
 
 header, footer, section {
   display: block;
@@ -177,15 +162,6 @@ header {
     width: 300px;
     color: black; }
 
-#address {
-  margin-left: 10px; }
-  #address img {
-    width: 228px;
-    height: 132px;
-    float: right; }
-  #address table {
-    width: 300px; }
-
 section h3 {
   text-align: center;
   font-style: italic;
@@ -199,10 +175,8 @@ section h3 {
   background-color: red; }
 
 footer {
-  background: red;
   padding-top: 40px;
   margin-top: 30px;
-  margin-bottom: 40px;
   margin-right: auto;
   max-width: 640px;
   text-align: center;
@@ -212,6 +186,34 @@ footer {
   footer ul {
     font-weight: bold;
     text-align: left; }
+
+#address img {
+  width: 228px;
+  height: 132px;
+  float: right; }
+#address table {
+  width: 300px; }
+#address .wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px; }
+
+#menu td:last-child {
+  text-align: right; }
+#menu td:first-child {
+  text-align: right;
+  width: 5%; }
+#menu table {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 480px; }
+  #menu table caption {
+    font-weight: bolder; }
+
+#sajgonki p {
+  padding-left: 40px;
+  padding-right: 40px; }
 
 /* STYLES */
 div.shell {
