@@ -91,20 +91,6 @@ a {
 section#main_content {
   min-height: 185px; }
 
-footer {
-  background: red;
-  padding-top: 104px;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  margin-right: auto;
-  max-width: 640px;
-  text-align: center; }
-  footer p {
-    font-weight: bold;
-    color: #8b786f; }
-  footer a {
-    color: #cd596b; }
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
@@ -196,15 +182,15 @@ td {
   td:last-child {
     border-right: none; }
 
-#dishes table tr > td:last-child {
+#menu td:last-child {
   text-align: right; }
-#dishes table tr > td:first-child {
+#menu td:first-child {
   text-align: right;
   width: 5%; }
 
-#dishes table {
+#menu table {
   margin-bottom: 30px; }
-  #dishes table caption {
+  #menu table caption {
     font-weight: bolder; }
 
 th:last-child {
@@ -230,36 +216,37 @@ header, footer, section {
   margin: 0 auto; }
 
 header, footer {
-  background-color: red;
-  color: yellow; }
+  background-color: red; }
 
-header h1 {
-  font-size: 2em;
-  font-weight: bolder;
-  font-style: normal;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 1;
-  padding: 14px 20px 0 10px; }
-header h2 {
-  text-transform: uppercase;
-  font: bold italic 0.85em/1.5 Georgia, Times, “Times New Roman”, serif;
-  padding-top: 18px;
-  text-align: center;
-  font-size: 1.3em; }
-header .phone {
-  font-size: 1.3em;
-  display: block;
-  text-align: right;
-  padding: 5px; }
-header .brand {
-  font-size: 4em;
-  font-family: "Dancing Script", cursive;
-  text-align: center;
-  margin: 10px auto 0px auto;
-  background-color: white;
-  width: 300px;
-  color: black; }
+header {
+  color: yellow; }
+  header h1 {
+    font-size: 2em;
+    font-weight: bolder;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    padding: 14px 20px 0 10px; }
+  header h2 {
+    text-transform: uppercase;
+    font: bold italic 0.85em/1.5 Georgia, Times, “Times New Roman”, serif;
+    padding-top: 18px;
+    text-align: center;
+    font-size: 1.3em; }
+  header .phone {
+    font-size: 1.3em;
+    display: block;
+    text-align: right;
+    padding: 5px; }
+  header .brand {
+    font-size: 4em;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    margin: 10px auto 0px auto;
+    background-color: white;
+    width: 300px;
+    color: black; }
 
 #address {
   margin-left: 10px; }
@@ -280,6 +267,21 @@ section h3 {
   font-size: 1em;
   color: yellow;
   background-color: red; }
+
+footer {
+  background: red;
+  padding-top: 40px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-right: auto;
+  max-width: 640px;
+  text-align: center;
+  color: white; }
+  footer p {
+    font-weight: bold; }
+  footer ul {
+    font-weight: bold;
+    text-align: left; }
 
 /* STYLES */
 div.shell {

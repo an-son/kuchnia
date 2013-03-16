@@ -108,21 +108,6 @@ a
 section#main_content
   min-height: 185px
 
-footer
-  background: $theme-background2
-  padding-top: 104px
-  margin-top: 30px 
-  margin-bottom: 40px 
-  margin-right: auto
-  //margin: -94px auto 40px
-  max-width: 640px
-  text-align: center
-  p
-    font-weight: bold
-    color: #8b786f
-  a
-    color: $theme-background
-
 h1, h2, h3, h4, h5, h6
   font-weight: bold
 
@@ -217,18 +202,17 @@ td
   &:last-child
     border-right: none
 
-#dishes table tr > td
+#menu td
   &:last-child
     text-align: right
   &:first-child
     text-align: right
     width: 5%
 
-#dishes table
+#menu table
   margin-bottom: 30px
   caption
     font-weight: bolder
-
 
 th:last-child
   border-right: none
@@ -254,9 +238,9 @@ header, footer, section
 
 header, footer
   background-color: $theme-background2
-  color: $theme-highlight-text
 
 header
+  color: $theme-highlight-text
   h1
     //background-color: $theme-background2
     font-size: 2em
@@ -309,3 +293,19 @@ section
     font-size: 1em
     color: $theme-highlight-text
     background-color: $theme-background2
+
+footer
+  background: $theme-background2
+  padding-top: 40px
+  margin-top: 30px
+  margin-bottom: 40px
+  margin-right: auto
+  //margin: -94px auto 40px
+  max-width: 640px
+  text-align: center
+  color: white
+  p
+    font-weight: bold
+  ul
+    font-weight: bold
+    text-align: left
