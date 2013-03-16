@@ -73,7 +73,12 @@ body {
   line-height: 1;
   background: white;
   color: #544943;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
+
+section {
+  font-family: "Open Sans", Myriad, Calibri, sans-serif; }
+
+header {
   font-family: "Open Sans", Myriad, Calibri, sans-serif; }
 
 div.shell {
@@ -87,9 +92,6 @@ a {
   a:hover {
     color: #417090;
     text-decoration: underline; }
-
-section#main_content {
-  min-height: 185px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
@@ -121,46 +123,6 @@ dd {
   padding-left: 1.35em; }
   dd p:first-child {
     margin-top: 0; }
-
-/* Content based headers */
-#main_content > .header-level-1:first-child, #main_content > .header-level-2:first-child, #main_content > .header-level-3:first-child, #main_content > .header-level-4:first-child, #main_content > .header-level-5:first-child, #main_content > .header-level-6:first-child {
-  margin-top: 0; }
-
-.header-level-1 {
-  font-size: 1.35em;
-  color: red;
-  text-align: center;
-  font-style: italic;
-  margin: 1.1em 0 0.38em;
-  line-height: 1.2;
-  padding-bottom: 10px; }
-
-.header-level-2 {
-  font-size: 1.58em;
-  color: red;
-  margin: 0.95em 0 0.5em;
-  border-bottom: 0.1em solid #d3ccc1;
-  line-height: 1.2;
-  padding-bottom: 10px; }
-
-.header-level-3 {
-  margin: 20px 0 10px;
-  font-size: 1.45em; }
-
-.header-level-4 {
-  margin: 0.6em 0;
-  font-size: 1.2em;
-  color: #cd596b; }
-
-.header-level-5 {
-  margin: 0.7em 0;
-  font-size: 1em;
-  color: #8b786f; }
-
-.header-level-6 {
-  margin: 0.8em 0;
-  font-size: 0.85em;
-  font-style: italic; }
 
 hr {
   border: none;
@@ -235,6 +197,7 @@ header {
     text-align: center;
     font-size: 1.3em; }
   header .phone {
+    font-weight: bold;
     font-size: 1.3em;
     display: block;
     text-align: right;
