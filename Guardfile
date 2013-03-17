@@ -5,3 +5,7 @@ guard 'livereload' do
   watch(%r{.+\.(erb|haml|slim|html)$})
   watch(%r{stylesheets/.+\.(css)})
 end
+
+guard 'haml' do
+  watch(/^.+(\.html\.haml)/)
+end
