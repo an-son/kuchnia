@@ -149,11 +149,12 @@ header {
     padding-top: 18px;
     text-align: center;
     font-size: 1.8em; }
-  header .asian {
+  header h2.asian {
     font-family: "Conv_bonzai", serif; }
   header h2.english {
     font-family: Myriad, Calibri, sans-serif; }
   header .phone {
+    color: yellow;
     font-weight: bold;
     font-size: 1.3em;
     display: block;
@@ -192,6 +193,9 @@ footer {
   footer ul {
     font-weight: bold;
     text-align: left; }
+  footer .phone {
+    color: white;
+    font-weight: bold; }
 
 #address img {
   width: 228px;
