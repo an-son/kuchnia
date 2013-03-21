@@ -211,6 +211,8 @@ footer
   ul
     font-weight: bold
     text-align: left
+    li
+      background: none
   .phone
     color: white
     font-weight: bold
@@ -231,6 +233,10 @@ footer
     caption
       font-weight: bolder
     td
+      &:first-child
+        text-align: right
+        width: 1.8em
+        padding-right: 1em
       &:last-child
         text-align: right
 
@@ -238,6 +244,14 @@ footer
   p
     padding-left: 40px
     padding-right: 40px
+
+@media all
+  #address table
+    width: 300px
+
+@media print
+  #address table
+    width: 320px
 
 @media all
   .page-break
