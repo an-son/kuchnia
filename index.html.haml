@@ -24,6 +24,64 @@
        document.body.appendChild(e);
        }
 
+    :javascript
+      function getCookie(c_name) {
+        var i, x, y, ARRcookies = document.cookie.split(";");
+          for (i = 0; i < ARRcookies.length; i++) {
+            x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+              y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+              x = x.replace(/^\s+|\s+$/g, "");
+              if (x == c_name) {
+                return unescape(y);
+              }
+          }
+      }
+
+      function doAccept() {
+        setCookie("jsCookieCheck", null, 365);
+        location.reload(true);
+      }
+
+      function displayNotification() {
+        var msg = "<div id='cookiewarning' >";
+        msg = msg + "<div style='text-align:center;margin:0px;padding:10px;width:auto;background:white;color:black;font-size:90%;'>";
+        msg = msg + "<table style='width:580px;margin-left:auto;margin-right:auto'>";
+        msg = msg + "<tbody>";
+        msg = msg + "<tr>";
+        msg = msg + "<td>";
+        msg = msg + "UWAGA! Ten serwis używa cookies i podobnych technologii <br/>(brak zmiany ustawienia przeglądarki oznacza zgodę na to)";
+        msg = msg + "<br/>Więcej w <a href=\"./polityka_cookies.html\" style=\"font-weight:bold;color:black;\">\"Polityce Cookies\" »</a>. ";
+        msg = msg + "<td>";
+        msg = msg + "<a style='color:black;font-weight:bold;cursor:pointer;' onClick='JavaScript:doAccept();' >[ Zamknij ]</a>";
+        msg = msg + "</td>";
+        msg = msg + "</tr>";
+        msg = msg + "<tbody>";
+        msg = msg + "</table>";
+        msg = msg + "</div></div>";
+        document.writeln(msg);
+      }
+
+      function setCookie(c_name, value, exdays) {
+        var exdate = new Date();
+        exdate.setDate(exdate.getDate() + exdays);
+        var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString() + "; path=/");
+        document.cookie = c_name + "=" + c_value;
+      }
+
+      function checkCookie() {
+        var cookieName = "jsCookieCheck";
+        var cookieChk = getCookie(cookieName);
+        if (cookieChk != null && cookieChk != "") {
+            setCookie(cookieName, cookieChk, 365);
+        }
+        else {
+            displayNotification();
+        }
+      }
+
+      checkCookie();
+
+
     .shell
       %header
         %h2.asian Oryginalna Kuchnia Wietnamska, Azjatycka
